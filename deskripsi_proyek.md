@@ -10,7 +10,7 @@ Sistem ini dikembangkan dengan fungsionalitas utama sebagai berikut:
 
 ### **Autentikasi & Informasi**
 
-- **Login**: Sistem autentikasi pengguna yang aman untuk masuk ke dalam aplikasi _(dikembangkan oleh Isma Haurani)_.
+- **Login**: Sistem autentikasi pengguna yang aman untuk masuk ke dalam aplikasi.
 - **Informasi Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus data informasi terkait gym.
 - **Fasilitas Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus daftar fasilitas yang tersedia di gym.
 
@@ -19,7 +19,7 @@ Sistem ini dikembangkan dengan fungsionalitas utama sebagai berikut:
 ## Teknologi yang Digunakan
 
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap / Tailwind CSS
-- **Backend**: PHP / Node.js _(sesuaikan dengan teknologi yang Anda gunakan)_
+- **Backend**: PHP / Node.js
 - **Database**: MySQL / PostgreSQL
 - **Version Control**: Git & GitHub
 
