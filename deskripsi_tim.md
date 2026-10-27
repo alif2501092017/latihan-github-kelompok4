@@ -1,4 +1,4 @@
-# 👥 Tim Pengembang - Website Gym
+# Tim Pengembang - Website Gym
 
 Dokumen ini berisi informasi mengenai daftar anggota tim pengembang proyek **Website Gym** beserta pembagian tugas dan peran dalam pembangunan fitur aplikasi.
 
