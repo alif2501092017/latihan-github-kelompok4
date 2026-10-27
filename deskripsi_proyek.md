@@ -1,23 +1,18 @@
-# Website Pangeran GYM
+# Website Gym Management System
 
-Selamat datang di repositori **Website Pangeran GYM**! Proyek ini dirancang untuk menyediakan platform berbasis web yang memudahkan pengelolaan keanggotaan gym, pendaftaran kelas latihan, jadwal pelatih (_personal trainer_), serta sistem pembayaran secara efisien.
+Selamat datang di repositori **Website Gym Management System**! Proyek ini dikembangkan secara kolaboratif untuk menyediakan platform berbasis web yang memudahkan pengelolaan informasi gym serta fasilitas yang tersedia secara terstruktur.
 
 ---
 
-## Fitur Utama
+## Fitur Utama & Pembagian Modul
 
-### **Sisi Pengguna (Member)**
+Sistem ini dikembangkan dengan fungsionalitas utama sebagai berikut:
 
-- **Registrasi & Login**: Sistem autentikasi pengguna yang aman.
-- **Pilihan Paket Keanggotaan**: Melihat dan memilih berbagai paket membership gym.
-- **Pemesanan Kelas & Pelatih**: Mendaftar jadwal kelas atau sesi dengan _Personal Trainer_.
-- **Dashboard Profil**: Melihat status keanggotaan, histori transaksi, dan jadwal latihan.
+### **Autentikasi & Informasi**
 
-### **Sisi Administrator (Pengelola Gym)**
-
-- **Manajemen Anggota**: Mengelola data _member_, status keaktifan, dan perpanjangan paket.
-- **Manajemen Kelas & Instruktur**: Menambah, mengubah, atau menghapus jadwal latihan dan instruktur.
-- **Laporan Transaksi**: Memantau pembayaran dan statistik pendapatan gym secara real-time.
+- **Login**: Sistem autentikasi pengguna yang aman untuk masuk ke dalam aplikasi _(dikembangkan oleh Isma Haurani)_.
+- **Informasi Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus data informasi terkait gym.
+- **Fasilitas Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus daftar fasilitas yang tersedia di gym.
 
 ---
 
