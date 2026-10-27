@@ -1,4 +1,4 @@
-# 👥 Tim Pengembang - Website Gym
+# Tim Pengembang - Website Gym
 
 Dokumen ini berisi informasi mengenai daftar anggota tim pengembang proyek **Website Gym** beserta pembagian tugas dan peran dalam pembangunan fitur aplikasi.
 
@@ -17,7 +17,7 @@ Berikut adalah rincian peran masing-masing anggota tim dalam mengembangkan fitur
 
 ---
 
-## Alur Kolaborasi Tim
+ ## Alur Kolaborasi Tim
 
 Pembagian tugas di atas dirancang agar modul utama (Manajemen Informasi Gym dan Fasilitas) terkelola secara terstruktur (_CRUD: Create, Read, Update, Delete_) dengan kolaborasi yang merata di antara seluruh anggota tim.
 
