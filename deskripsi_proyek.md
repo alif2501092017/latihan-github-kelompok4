@@ -14,8 +14,6 @@ Sistem ini dikembangkan dengan fungsionalitas utama sebagai berikut:
 - **Informasi Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus data informasi terkait gym.
 - **Fasilitas Gym**: Fitur untuk melihat, menambah, memperbarui, dan menghapus daftar fasilitas yang tersedia di gym.
 
-//tes codingan dan tes git pull
-//tes save
 ---
 
 ## Teknologi yang Digunakan
