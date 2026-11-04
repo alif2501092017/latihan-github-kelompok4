@@ -12,6 +12,6 @@ if (!$email || !$nama || !$sandi) {
     exit("Pemakaian: php buat_admin.php email \"Nama\" sandi\n");
 }
 
-$st = db()->prepare("INSERT INTO users (nama, email, password, role) VALUES (?, ?, ?, 'admin')");
+$st = $koneksi()->prepare("INSERT INTO users (nama, email, password, role) VALUES (?, ?, ?, 'admin')");
 $st->execute([$nama, $email, password_hash($sandi, PASSWORD_DEFAULT)]);
 echo "Admin dibuat: $email\n";
