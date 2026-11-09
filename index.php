@@ -95,7 +95,7 @@ session_start();
     
 <!-- Tombol Login di Sudut Kiri Atas (Sesuai Permintaan) -->
 <div class="landing-header">
-    <a href="index.php" class="btn-login-corner">Login / Masuk</a>
+    <a href="login.php" class="btn-login-corner">Login / Masuk</a>
     <span style="font-size: 12px; color: var(--text-muted, #888);">Pangeran Gym Portal</span>
 </div>
 
@@ -145,7 +145,7 @@ session_start();
 
         <!-- Fasilitas 3 -->
         <div class="facility-card">
-            <img src="assets/img/loker.jpg" alt="Loker Aman" class="facility-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23222\'/><text x=\'50%\' y=\'50%\' fill=\'%23aaa\' text-anchor=\'middle\' dominant-baseline=\'central\' font-size=\'12\'>Loker Penyimpanan</text></svg>'">
+            <img src="assets/img/loker.jpg" alt="Loker Aman"  class="facility-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23222\'/><text x=\'50%\' y=\'50%\' fill=\'%23aaa\' text-anchor=\'middle\' dominant-baseline=\'central\' font-size=\'12\'>Loker Penyimpanan</text></svg>'">
             <div class="facility-name">Loker Aman</div>
         </div>
 
