@@ -74,3 +74,78 @@ function hash_palsu(): string
     static $h = null;
     return $h ??= password_hash('dummy-password', PASSWORD_DEFAULT);
 }
+
+
+// =========================================================================
+// ALIAS & FUNGSI PENDUKUNG (Untuk kompatibilitas dengan folder member/)
+// =========================================================================
+
+/** Alias untuk user_login() */
+function user(): ?array
+{
+    return user_login();
+}
+
+/** Alias untuk wajib_peran() */
+function require_role($role, $redirect = '../login.php'): void
+{
+    $roles = is_array($role) ? $role : [$role];
+    wajib_peran($roles, $redirect);
+}
+
+/** Redireksi halaman */
+function go(string $url): void
+{
+    header('Location: ' . $url);
+    exit;
+}
+
+/** Format angka ke Rupiah */
+function rupiah($angka): string
+{
+    return 'Rp ' . number_format((float)$angka, 0, ',', '.');
+}
+
+/** Notifikasi pesan kilat (flash message) */
+function flash($key = '', $message = '')
+{
+    if (!empty($key) && !empty($message)) {
+        $_SESSION['flash'][$key] = $message;
+    } elseif (!empty($key) && empty($message)) {
+        if (isset($_SESSION['flash'][$key])) {
+            $msg = $_SESSION['flash'][$key];
+            unset($_SESSION['flash'][$key]);
+            return $msg;
+        }
+        return null;
+    }
+}
+
+/** Layout bagian atas */
+function layout_start(string $title = 'Pangeran Gym'): void
+{
+    echo '<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><title>' . e($title) . '</title></head><body>';
+}
+
+/** Layout bagian bawah */
+function layout_end(): void
+{
+    echo '</body></html>';
+}
+
+/** Handler upload berkas */
+function upload_file(array $file, string $destinationDir = '../uploads/'): ?string
+{
+    if ($file['error'] !== UPLOAD_ERR_OK) {
+        return null;
+    }
+    $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
+    $newName = uniqid('img_', true) . '.' . strtolower($ext);
+    if (!is_dir($destinationDir)) {
+        mkdir($destinationDir, 0777, true);
+    }
+    if (move_uploaded_file($file['tmp_name'], $destinationDir . $newName)) {
+        return $newName;
+    }
+    return null;
+}
