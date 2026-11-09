@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+body { 
+    margin: 0; 
+    background: #0a0a0a; /* Hitam pekat untuk latar belakang utama */ 
+    font: 16px/1.4 Arial, Helvetica, sans-serif; 
+    color: #e0e0e0; /* Teks abu-abu terang agar mudah dibaca di atas hitam */ 
+}
+a { color: #ff5252; }
+
+/* Kotak Utama / Frame */
+.frame { 
+    max-width: 520px; 
+    margin: 40px auto; 
+    background: #161616; /* Hitam arang untuk kotak konten */ 
+    border: 1px solid #2a0808; /* Garis tepi tipis bernuansa merah gelap */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); 
+}
+
+/* Bilah Atas ala Jendela */
+.bar { 
+    height: 30px; 
+    background: #1f0505; /* Merah gelap sangat tua */ 
+    display: flex; 
+    align-items: center; 
+    padding-left: 10px; 
+    border-bottom: 1px solid #3a0d0d;
+}
+
+.content { padding: 30px 40px; text-align: center; }
+
+.logo {
+    width: 160px; height: 140px; margin: 0 auto 20px; 
+    border: 1px solid #8b0000; /* Bingkai merah gelap pekat */
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    background: #111;
+}
+
+form { text-align: left; }
+label { display: block; margin-top: 18px; font-size: 15px; color: #ccc; }
+
+/* Kolom Input */
+input[type=text], input[type=password], input[type=email] {
+    display: block; width: 100%; height: 40px; margin-top: 4px; padding: 0 10px;
+    background: #1f1f1f; /* Hitam sedikit terang untuk kolom input */
+    border: 1px solid #441010; /* Garis tepi merah gelap */
+    color: #fff;
+    border-radius: 0; font: inherit;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus { 
+    border-color: #b71c1c; /* Merah terang saat diklik/fokus */
+    outline: none; 
+}
+
+.pw { position: relative; }
+.pw input { padding-right: 80px; }
+.eye { position: absolute; right: 4px; top: 8px; border: 0; background: none; color: #aaa; cursor: pointer; font-size: 13px; }
+
+/* Tombol Utama (Submit / Login) */
+.btn {
+    display: block; margin: 24px auto 0; 
+    background: #8b0000; /* Merah gelap pekat */ 
+    color: #fff; border: 0;
+    border-radius: 4px; padding: 10px 44px; font: 700 14px Arial; cursor: pointer;
+    transition: background 0.2s;
+}
+.btn:hover { background: #b71c1c; /* Merah lebih menyala saat di-hover */ }
+
+/* Tombol Pilih Portal (Admin & Member) */
+.pilih { 
+    display: flex; align-items: center; width: 260px; margin: 14px auto; padding: 12px 16px; 
+    background: #1a1a1a;
+    border: 1px solid #441010; /* Garis tepi merah gelap */ 
+    color: #e0e0e0;
+    text-decoration: none; text-align: left; 
+    transition: all 0.2s;
+}
+.ic { 
+    width: 24px; height: 24px; 
+    fill: #b71c1c; /* Ikon SVG berwarna merah gelap pekat */ 
+    margin-right: 14px; flex: none; 
+}
+.pilih:hover { 
+    background: #2a0808; /* Latar belakang berubah menjadi merah gelap saat disentuh */ 
+    border-color: #b71c1c;
+    color: #fff;
+}
+
+/* Pesan Error & Teks Pendukung */
+.err { 
+    border: 1px solid #8b0000; 
+    background: #2a0808; 
+    color: #ff8a80; 
+    padding: 8px; margin-bottom: 8px; text-align: left; 
+}
+.kecil { font-size: 13px; color: #aaa; }
+.kanan { text-align: right; font-size: 12px; margin-top: 4px; }
+.u { text-decoration: underline; color: #ff5252; }
+
+hr { border: 0; border-top: 1px solid #331111; margin: 0 14px; }
+
+.foot { text-align: center; padding: 14px; margin: 0; font-size: 14px; color: #888; }
