@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="frame">
     <div class="bar"></div>
     <div class="content">
-        <div class="logo">Logo Pangeran Gym</div>
+        <img src="logopangeran.png" alt="Logo Pangeran GYM" width="150" height="auto">
         <?php if ($error): ?><div class="err"><?= e($error) ?></div><?php endif; ?>
         <form method="post" autocomplete="off">
             <input type="hidden" name="csrf" value="<?= e(csrf_token()) ?>">
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p><a href="index.php">&larr; Kembali ke Beranda</a></p>
     </div>
     <hr>
-    <p class="foot">Butuh bantuan Hubungi CS: 0812-xxxx-xxxx</p>
+    <p class="foot">Butuh bantuan Hubungi CS: 082279974645</p>
 </div>
 </body>
 </html>

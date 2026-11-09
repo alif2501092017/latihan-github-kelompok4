@@ -116,22 +116,21 @@ session_start();
     <!-- Informasi 1 -->
     <div class="info-card">
         <div class="info-date">📅 10 November 2026</div>
-        <p class="info-text"><b>Promo Spesial Member Baru:</b> Diskon pendaftaran 20% khusus paket bulanan periode ini!</p>
+        <p class="info-text"><b>Promo Spesial Mahasiswa hanya 120.000:</b> Diskon pendaftaran khusus paket 3 bulan untuk Umum!</p>
     </div>
 
     <!-- Informasi 2 -->
     <div class="info-card">
-        <div class="info-date">📅 05 November 2026</div>
-        <p class="info-text"><b>Jadwal Kelas Baru:</b> Kelas Aerobik dan Yoga kini hadir setiap hari Sabtu pagi bersama instruktur profesional.</p>
+        <p class="info-text"><b>Jadwal GYM sepuasnya untuk semua member</b></p>
     </div>
 
 
-    <!-- ================= BAGIAN 2: FASILITAS GYM & GAMBAR (Use Case 15) ================= -->
+    <!-- ================= BAGIAN 2: FASILITAS GYM & GAMBAR ================= -->
     <div class="section-title">Fasilitas Pangeran Gym</div>
     
     <div class="facility-grid">
         
-        <!-- Fasilitas 1: Ubah src="images/fitnes.jpg" dengan lokasi gambar Anda -->
+        <!-- Fasilitas 1 -->
         <div class="facility-card">
             <img src="assets/img/area_fitnes.jpg" alt="Area Fitness" class="facility-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23222\'/><text x=\'50%\' y=\'50%\' fill=\'%23aaa\' text-anchor=\'middle\' dominant-baseline=\'central\' font-size=\'12\'>Area Fitness</text></svg>'">
             <div class="facility-name">Area Fitness & Beban</div>
@@ -145,14 +144,7 @@ session_start();
 
         <!-- Fasilitas 3 -->
         <div class="facility-card">
-            <img src="assets/img/loker.jpg" alt="Loker Aman"  class="facility-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23222\'/><text x=\'50%\' y=\'50%\' fill=\'%23aaa\' text-anchor=\'middle\' dominant-baseline=\'central\' font-size=\'12\'>Loker Penyimpanan</text></svg>'">
             <div class="facility-name">Loker Aman</div>
-        </div>
-
-        <!-- Fasilitas 4 -->
-        <div class="facility-card">
-            <img src="assets/img/parkir.jpg" alt="Area Parkir" class="facility-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'#222\'/><text x=\'50%\' y=\'50%\' fill=\'#aaa\' text-anchor=\'middle\' dominant-baseline=\'central\' font-size=\'12\'>Area Parkir</text></svg>'">
-            <div class="facility-name">Area Parkir Luas</div>
         </div>
 
     </div>

@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="frame">
     <div class="bar"></div>
     <div class="content">
-        <div class="logo">Logo Pangeran Gym</div>
+        <img src="logopangeran.png" alt="Logo Pangeran GYM" width="150" height="auto">
         <h2>Daftar Member Baru</h2>
 
         <?php if ($err): ?><div class="err"><?= e($err) ?></div><?php endif; ?>
