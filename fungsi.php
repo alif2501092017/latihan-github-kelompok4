@@ -133,19 +133,37 @@ function layout_end(): void
     echo '</body></html>';
 }
 
-/** Handler upload berkas */
-function upload_file(array $file, string $destinationDir = '../uploads/'): ?string
+/** 
+ * Handler upload berkas yang fleksibel
+ * Menerima tipe 'array' ($_FILES['bukti']) atau 'string' nama input ('bukti')
+ */
+function upload_file($fileOrKey, string $destinationDir = '../uploads/'): ?string
 {
-    if ($file['error'] !== UPLOAD_ERR_OK) {
+    $file = null;
+
+    if (is_string($fileOrKey)) {
+        if (!isset($_FILES[$fileOrKey])) {
+            return null;
+        }
+        $file = $_FILES[$fileOrKey];
+    } elseif (is_array($fileOrKey)) {
+        $file = $fileOrKey;
+    }
+
+    if (!$file || !isset($file['error']) || $file['error'] !== UPLOAD_ERR_OK) {
         return null;
     }
+
     $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
     $newName = uniqid('img_', true) . '.' . strtolower($ext);
+
     if (!is_dir($destinationDir)) {
         mkdir($destinationDir, 0777, true);
     }
+
     if (move_uploaded_file($file['tmp_name'], $destinationDir . $newName)) {
         return $newName;
     }
+
     return null;
 }
