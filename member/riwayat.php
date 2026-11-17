@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../fungsi.php';
 
@@ -44,7 +43,7 @@ layout_start('Riwayat Pembayaran', 'member');
             $i = 1;
 
             while ($r = $rows->fetch_assoc()):
-            ?>
+                ?>
 
                 <tr>
 

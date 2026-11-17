@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../fungsi.php';
 
@@ -70,7 +69,7 @@ layout_start('Dashboard Member', 'member');
             <?= $m && $m['aktif_sampai']
                 ? 'Masa aktif sampai ' . e($m['aktif_sampai'])
                 : 'Menunggu pembayaran pertama diverifikasi.'
-            ?>
+                ?>
         </p>
 
         <a class="btn" href="pembayaran.php">

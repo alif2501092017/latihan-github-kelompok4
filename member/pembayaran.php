@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../fungsi.php';
 
@@ -107,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?= $pertama
                 ? 'Pembayaran Pertama'
                 : 'Pembayaran Iuran Bulanan'
-            ?>
+                ?>
         </h2>
 
         <p>
@@ -127,11 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <form method="post" enctype="multipart/form-data">
 
-            <input
-                type="hidden"
-                name="csrf"
-                value="<?= e(csrf_token()) ?>"
-            >
+            <input type="hidden" name="csrf" value="<?= e(csrf_token()) ?>">
 
             <label>Metode Pembayaran</label>
 
@@ -147,12 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Bukti Pembayaran (jpg/png/webp, maks. 3 MB)
             </label>
 
-            <input
-                type="file"
-                name="bukti"
-                accept="image/*"
-                required
-            >
+            <input type="file" name="bukti" accept="image/*" required>
 
             <button class="btn">
                 Kirim Pembayaran

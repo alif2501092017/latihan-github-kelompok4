@@ -103,7 +103,7 @@ function go(string $url): void
 /** Format angka ke Rupiah */
 function rupiah($angka): string
 {
-    return 'Rp ' . number_format((float)$angka, 0, ',', '.');
+    return 'Rp ' . number_format((float) $angka, 0, ',', '.');
 }
 
 /** Notifikasi pesan kilat (flash message) */
